@@ -1,0 +1,225 @@
+<svg width="420" height="520" viewBox="0 0 420 520" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#22D3EE"/>
+<stop offset="100%" stop-color="#7C3AED"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="5" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+</defs>
+
+<!-- Background -->
+
+<rect width="420" height="520" rx="30" fill="#0D1117"/>
+
+<!-- Floating Particles -->
+
+<circle cx="70" cy="60" r="3" fill="#22D3EE">
+<animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="340" cy="90" r="2" fill="#7C3AED">
+<animate attributeName="cy" values="90;60;90" dur="5s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="100" cy="440" r="2" fill="#58A6FF">
+<animate attributeName="cy" values="440;410;440" dur="6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Head -->
+
+<rect
+x="110"
+y="60"
+width="200"
+height="170"
+rx="40"
+fill="#161B22"
+stroke="url(#g)"
+stroke-width="3"/>
+
+<!-- Eyes -->
+
+<ellipse
+cx="165"
+cy="130"
+rx="18"
+ry="10"
+fill="#22D3EE"
+filter="url(#glow)">
+
+<animate attributeName="ry"
+values="10;1;10"
+dur="4s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse
+cx="255"
+cy="130"
+rx="18"
+ry="10"
+fill="#22D3EE"
+filter="url(#glow)">
+
+<animate attributeName="ry"
+values="10;1;10"
+dur="4s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<!-- Smile -->
+
+<path
+d="M170 175 Q210 205 250 175"
+stroke="#58A6FF"
+stroke-width="4"
+fill="none"/>
+
+<!-- Antenna -->
+
+<line
+x1="210"
+y1="60"
+x2="210"
+y2="25"
+stroke="#7C3AED"
+stroke-width="4"/>
+
+<circle
+cx="210"
+cy="18"
+r="8"
+fill="#22D3EE">
+
+<animate attributeName="r"
+values="7;10;7"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Body -->
+
+<rect
+x="125"
+y="250"
+width="170"
+height="180"
+rx="25"
+fill="#161B22"
+stroke="url(#g)"
+stroke-width="3"/>
+
+<!-- Core -->
+
+<circle
+cx="210"
+cy="340"
+r="28"
+fill="url(#g)"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="26;32;26"
+dur="2s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Chest Lines -->
+
+<line x1="160" y1="385" x2="260" y2="385"
+stroke="#58A6FF"
+stroke-width="3"/>
+
+<line x1="160" y1="400" x2="260" y2="400"
+stroke="#58A6FF"
+stroke-width="3"/>
+
+<!-- Left Arm -->
+
+<line
+x1="125"
+y1="285"
+x2="70"
+y2="340"
+stroke="url(#g)"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<!-- Right Arm -->
+
+<g>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+values="0 295 285;12 295 285;0 295 285"
+dur="2s"
+repeatCount="indefinite"/>
+
+<line
+x1="295"
+y1="285"
+x2="350"
+y2="210"
+stroke="url(#g)"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<circle
+cx="350"
+cy="210"
+r="10"
+fill="#22D3EE"/>
+
+</g>
+
+<!-- Legs -->
+
+<line
+x1="170"
+y1="430"
+x2="155"
+y2="490"
+stroke="url(#g)"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<line
+x1="250"
+y1="430"
+x2="265"
+y2="490"
+stroke="url(#g)"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<!-- Footer -->
+
+<text
+x="210"
+y="510"
+text-anchor="middle"
+fill="#58A6FF"
+font-family="JetBrains Mono"
+font-size="18">
+
+HELLO HUMAN 👋
+
+</text>
+
+</svg>

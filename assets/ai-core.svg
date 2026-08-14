@@ -1,0 +1,240 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#22D3EE"/>
+<stop offset="100%" stop-color="#7C3AED"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+</defs>
+
+<rect width="900" height="500" rx="25" fill="#0D1117"/>
+
+<text x="450" y="45"
+font-size="28"
+text-anchor="middle"
+fill="url(#grad)"
+font-family="JetBrains Mono"
+filter="url(#glow)">
+AI CORE DASHBOARD
+</text>
+
+<!-- CPU -->
+
+<text x="60" y="95"
+fill="#FFFFFF"
+font-family="JetBrains Mono"
+font-size="18">
+
+CPU
+
+</text>
+
+<rect x="170" y="78"
+width="620"
+height="18"
+rx="9"
+fill="#1F2937"/>
+
+<rect x="170" y="78"
+width="600"
+height="18"
+rx="9"
+fill="url(#grad)">
+
+<animate attributeName="width"
+values="560;620;560"
+dur="3s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- Learning -->
+
+<text x="60" y="155"
+fill="#FFFFFF"
+font-family="JetBrains Mono"
+font-size="18">
+
+Learning
+
+</text>
+
+<rect x="170"
+y="138"
+width="620"
+height="18"
+rx="9"
+fill="#1F2937"/>
+
+<rect x="170"
+y="138"
+width="540"
+height="18"
+rx="9"
+fill="#22D3EE">
+
+<animate attributeName="width"
+values="500;580;500"
+dur="4s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- AI -->
+
+<text x="60"
+y="215"
+fill="#FFFFFF"
+font-family="JetBrains Mono"
+font-size="18">
+
+AI Engine
+
+</text>
+
+<rect
+x="170"
+y="198"
+width="620"
+height="18"
+rx="9"
+fill="#1F2937"/>
+
+<rect
+x="170"
+y="198"
+width="590"
+height="18"
+rx="9"
+fill="#7C3AED">
+
+<animate attributeName="width"
+values="520;620;520"
+dur="2.5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- Motivation -->
+
+<text
+x="60"
+y="275"
+fill="#FFFFFF"
+font-family="JetBrains Mono"
+font-size="18">
+
+Motivation
+
+</text>
+
+<rect
+x="170"
+y="258"
+width="620"
+height="18"
+rx="9"
+fill="#1F2937"/>
+
+<rect
+x="170"
+y="258"
+width="620"
+height="18"
+rx="9"
+fill="#58A6FF">
+
+<animate
+attributeName="opacity"
+values="0.7;1;0.7"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- Coffee -->
+
+<text
+x="60"
+y="335"
+fill="#FFFFFF"
+font-family="JetBrains Mono"
+font-size="18">
+
+Coffee
+
+</text>
+
+<rect
+x="170"
+y="318"
+width="620"
+height="18"
+rx="9"
+fill="#1F2937"/>
+
+<rect
+x="170"
+y="318"
+width="560"
+height="18"
+rx="9"
+fill="#F59E0B">
+
+<animate
+attributeName="width"
+values="520;580;520"
+dur="5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- Status -->
+
+<circle
+cx="95"
+cy="430"
+r="10"
+fill="#22D3EE">
+
+<animate
+attributeName="r"
+values="8;11;8"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<text
+x="120"
+y="436"
+fill="#22D3EE"
+font-size="18"
+font-family="JetBrains Mono">
+
+SYSTEM ONLINE
+
+</text>
+
+<text
+x="470"
+y="436"
+fill="#9CA3AF"
+font-size="16"
+font-family="JetBrains Mono">
+
+MY STASH // AI MODE ACTIVE
+
+</text>
+
+</svg>

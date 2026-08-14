@@ -1,0 +1,119 @@
+<svg width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE">
+        <animate attributeName="stop-color"
+                 values="#22D3EE;#7C3AED;#58A6FF;#22D3EE"
+                 dur="8s"
+                 repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color"
+                 values="#7C3AED;#58A6FF;#22D3EE;#7C3AED"
+                 dur="8s"
+                 repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- Background -->
+
+  <rect
+      width="600"
+      height="180"
+      rx="25"
+      fill="#0D1117"/>
+
+  <!-- Animated Border -->
+
+  <rect
+      x="3"
+      y="3"
+      width="594"
+      height="174"
+      rx="22"
+      fill="none"
+      stroke="url(#grad)"
+      stroke-width="3">
+
+      <animate
+          attributeName="stroke-dasharray"
+          values="0,2000;2000,0;0,2000"
+          dur="8s"
+          repeatCount="indefinite"/>
+
+  </rect>
+
+  <!-- Decorative Lines -->
+
+  <line x1="70" y1="90" x2="180" y2="90"
+        stroke="url(#grad)"
+        stroke-width="2"/>
+
+  <line x1="420" y1="90" x2="530" y2="90"
+        stroke="url(#grad)"
+        stroke-width="2"/>
+
+  <!-- Main Logo -->
+
+  <text
+      x="300"
+      y="82"
+      text-anchor="middle"
+      font-size="42"
+      font-family="JetBrains Mono, Consolas, monospace"
+      font-weight="700"
+      fill="url(#grad)"
+      filter="url(#glow)">
+
+      MY STASH
+
+      <animate
+          attributeName="opacity"
+          values="0.7;1;0.7"
+          dur="2.5s"
+          repeatCount="indefinite"/>
+
+  </text>
+
+  <!-- Subtitle -->
+
+  <text
+      x="300"
+      y="115"
+      text-anchor="middle"
+      font-size="15"
+      font-family="JetBrains Mono, monospace"
+      fill="#9CA3AF">
+
+      Artificial Intelligence • Machine Learning • Developer
+
+  </text>
+
+  <!-- Motto -->
+
+  <text
+      x="300"
+      y="145"
+      text-anchor="middle"
+      font-size="14"
+      font-family="JetBrains Mono, monospace"
+      fill="#58A6FF">
+
+      Learn • Code • Build • Repeat
+
+  </text>
+
+</svg>

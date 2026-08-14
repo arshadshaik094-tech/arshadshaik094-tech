@@ -1,0 +1,183 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="titlebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <linearGradient id="prompt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#22D3EE" flood-opacity="0.25"/>
+    </filter>
+
+  </defs>
+
+  <!-- Window -->
+
+  <rect
+      width="900"
+      height="520"
+      rx="22"
+      fill="#0D1117"
+      filter="url(#shadow)"/>
+
+  <!-- Title -->
+
+  <rect
+      width="900"
+      height="46"
+      rx="22"
+      fill="url(#titlebar)"/>
+
+  <circle cx="28" cy="23" r="7" fill="#FF5F56"/>
+  <circle cx="50" cy="23" r="7" fill="#FFBD2E"/>
+  <circle cx="72" cy="23" r="7" fill="#27C93F"/>
+
+  <text
+      x="450"
+      y="29"
+      fill="#D1D5DB"
+      text-anchor="middle"
+      font-size="16"
+      font-family="JetBrains Mono">
+
+      arshad@github:~
+
+  </text>
+
+  <!-- Prompt -->
+
+  <text
+      x="40"
+      y="90"
+      fill="url(#prompt)"
+      font-size="20"
+      font-family="JetBrains Mono">
+
+      $ whoami
+
+  </text>
+
+  <text
+      x="40"
+      y="130"
+      fill="#FFFFFF"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      Arshad
+
+  </text>
+
+  <text
+      x="40"
+      y="165"
+      fill="#9CA3AF"
+      font-size="17"
+      font-family="JetBrains Mono">
+
+      Aspiring AI & Machine Learning Engineer
+
+  </text>
+
+  <text
+      x="40"
+      y="210"
+      fill="url(#prompt)"
+      font-size="20"
+      font-family="JetBrains Mono">
+
+      $ current_focus
+
+  </text>
+
+  <text
+      x="40"
+      y="250"
+      fill="#22D3EE"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      • Artificial Intelligence
+
+  </text>
+
+  <text
+      x="40"
+      y="285"
+      fill="#22D3EE"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      • Machine Learning
+
+  </text>
+
+  <text
+      x="40"
+      y="320"
+      fill="#22D3EE"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      • Computer Vision
+
+  </text>
+
+  <text
+      x="40"
+      y="355"
+      fill="#22D3EE"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      • Open Source
+
+  </text>
+
+  <text
+      x="40"
+      y="410"
+      fill="url(#prompt)"
+      font-size="20"
+      font-family="JetBrains Mono">
+
+      $ motto
+
+  </text>
+
+  <text
+      x="40"
+      y="450"
+      fill="#58A6FF"
+      font-size="18"
+      font-family="JetBrains Mono">
+
+      Learn • Code • Build • Repeat
+
+  </text>
+
+  <!-- Cursor -->
+
+  <rect
+      x="345"
+      y="437"
+      width="10"
+      height="22"
+      fill="#58A6FF">
+
+      <animate
+          attributeName="opacity"
+          values="1;0;1"
+          dur="1s"
+          repeatCount="indefinite"/>
+
+  </rect>
+
+</svg>
